@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="calendar.js"></script>
+    <link rel="stylesheet" href="calendar.css" />
+    <title>Calendario</title>
+  </head>
+  <body>
+    <table class="calendar" id="calendar">
+      <thead>
+        <tr style="background-color: rgb(163, 245, 200);">
+          <th>Dom</th>
+          <th>Seg</th>
+          <th>Ter</th>
+          <th>Qua</th>
+          <th>Qui</th>
+          <th>Sex</th>
+          <th>Sab</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <tr>
+        <h2>Veículos de Fretes</h2>
+        <ul>
+            <li><span class="color" style="background-color: rgb(150, 150, 235);"></span> Mercedes-Benz Sprinter</li>
+            <li><span class="color" style="background-color: rgba(155, 253, 185, 0.527);"></span> Ford Transit</li>
+            <li><span class="color" style="background-color: rgb(241, 146, 162);"></span> Fiat Ducato</li>
+            <li><span class="color" style="background-color: rgb(233, 122, 233);"></span> Volkswagen Crafter</li>
+        </ul>
+        <h2>Cada veiculo pode fazer apenas 3 fretes por mês</h2>
+    </tr>
+    <hr/>
+    <div id="tabela">
+    <label for="color">Escolha uma cor:</label>
+    <select id="color" name="color">
+        <option value="LightBlue" style="background-color: rgb(150, 150, 235);">Azul</option>
+        <option value="PaleGreen" style="background-color: rgba(155, 253, 185, 0.527);">Verde</option>
+        <option value="LightPink" style="background-color: rgb(241, 146, 162);">Rosa</option>
+        <option value="SlateBlue" style="background-color: rgb(233, 122, 233);">Roxo</option>
+    </select>
+    <label for="day">Escolha o dia:</label>
+    <input type="number" id="day" name="day" min="1" max="31">
+    <input type="submit" onclick="colorirDia()">
+ </div>
+    
+</body>
+</html>
